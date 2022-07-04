@@ -1,0 +1,14 @@
+Spring’s core logic is dependency injection. 
+Dependency injection is a programming pattern that allows developers 
+to build more decoupled architectures. 
+Dependency injection means that Spring understands the different Java annotations 
+that a developer puts on top of classes
+
+Spring framework is an open-source Java platform 
+that provides comprehensive infrastructure support for developing robust Java applications 
+very easily and very rapidly
+
+Spring Core Module: This core module is the fundamental module of the framework. 
+This core module tells about how to configure spring beans, 
+their dependencies in the XML file. 
+This core module also provides a Spring Inversion of Control ( IOC ) container (Spring Container).

@@ -1,0 +1,119 @@
+Spring boot:
+	Spring is a framework that is used to build the java applications.
+	Boot means bootstrap.
+
+-> Spring Boot makes it easy to create stand-alone, production-grade Spring based Applications that you can "just run".
+
+Spring: 
+	- Application framework.
+	- Programming and configuration model -> connecting to db, http requests, etc.
+	- infrastructure support.
+
+Problems with spring:
+	
+	- Huge framework
+	- multiple setup steps
+	- Multiple configuration steps
+	- Multiple build and deploy steps
+
+Staring Spring Boot:
+
+	SpringApplication.run(App.class, args); used to run spring boot application. => static method.
+
+Steps:
+
+-> Sets up default configuration
+
+-> Starts Spring application context
+
+-> Performs class path scan
+
+-> Starts Tomacat server
+
+Adding a controller:
+
+	- A java class
+	- Marked with annotations
+	- Has info about -> 
+		- What URL access triggers it?
+		- What method to run when accessed?
+
+Annotations:
+
+RestContoller -> Used to handle all REST APIs such as GET,PUT,POST and DELETE requests.
+
+RequestMapping -> It is used to map web requests onto specific handler classess and/or handler methods.
+	       -> maps only to the GET method by default. To map to other HTTP methods, you will have to specify it in the annotation.
+
+-> The generated JSON has key names corresponding to property names of the Topic class. The JSON values are the values of those properties.
+
+Service -> It is used to mark the class as a provider. It is used with classes that provide some business functionalities.
+
+Autowired -> It is used enables you to inject the object dependency implicity. It internallu uses setter or constructor injection.
+	  -> Cannot be used to inject primitive and string values. It works with reference only.
+
+PathVariable -> It indicates that a method parameter should be bound to a URI template variable.
+		-> If we give other name in URI part we will use like this 
+			public Topic getTopic(@PathVariable("foo") String id){}
+
+RequestBody -> It maps the HttpRequest body to a transfer or domain object, enabling automatic deserialization of the inbound HttpRequest body onto a Java object
+
+Embedded Tomcat Server:
+Advantages:
+
+- Convenience
+- Servlet container config is now application config
+- Standalone application
+- Useful for microservices architecture
+
+CourseApi:
+
+Resourses: Topic, Course, Lesson
+	-> A topic can have multiple courses and a course can consist of multiple lessons.
+
+Topics:
+	GET	/topics		Gets all topics
+	GET	/topics/id	Gets the topic
+	POST	/topics		Create new topic
+	PUT	/topics/id	Updates the topic
+	DELETE	/topics/id	Deletes the topic
+
+-> While using the requestmapping the single element we can find using @RequestMapping("/topics/{id}").
+
+Starting a Spring Boot App:
+
+	- Spring Initializr
+
+		-> In this open the spring intializr and fill the groupid, artifactid and package name and so on.
+		-> After the we can add dependencies whatever we want then click on generate.
+		-> Then it will generates a zip folder we have to extract it.
+		-> Finally import that folder in sts -> exisiting maven project.
+
+	- Spring Boot CLI
+
+
+	- STS IDE
+
+		-> right click and click on new then go to spring starter project.
+		-> Then all process is like spring intializr only.
+
+Configuration:
+
+	- application.properties(spring boot website => common application properties) 
+		
+		=> It used to configure the different types of properties in spring boot.
+
+-> Go to reasources and right click
+-> Click on new next click on File
+-> save that file as application.properties
+
+	-> In this properties file we can give server port, db connection and so on.
+
+Spring Data JPA: The Data Tier
+
+JPA -> (Java Persistance API) => basically a specification that lets you do ORM(Object - Relational Mapping) when you are connecting to the relational db.
+
+ORM -> It will do the mapping your entity classes into sequel tables.
+
+JPA will uses the ORM.
+

@@ -1,0 +1,26 @@
+Microservices are a modern approach to software whereby 
+application code is delivered in small, 
+manageable pieces, independent of others.
+Their small scale and relative isolation can lead to many additional benefits, 
+such as easier maintenance,
+improved productivity, greater fault tolerance,
+better business alignment, and more.
+With Spring Boot, your microservices can start small and iterate fast. 
+That’s why it has become the de facto standard for Java™ microservices. 
+Quickstart your project with Spring Initializr and then package as a JAR. 
+With Spring Boot’s embedded server model, you’re ready to go in minutes.
+The distributed nature of microservices brings challenges. Spring helps you mitigate these. 
+With several ready-to-run cloud patterns, Spring Cloud can help with service discovery, 
+load-balancing, circuit-breaking, 
+distributed tracing, and monitoring. It can even act as an API gateway.
+A collection of loosely coupled services used to build computer applications
+A microservice architecture – a variant of the 
+service-oriented architecture (SOA) structural style – 
+arranges an application as a collection of loosely-coupled services. 
+In a microservices architecture, services are fine-grained and the protocols are lightweight. 
+The goal is that teams can bring their services to life independent of others.
+Microservice architectures are the ‘new normal’. Building small, self-contained, 
+ready to run applications can bring great flexibility and added resilience to your code. 
+Spring Boot’s many purpose-built features make it easy to build and run your microservices in production at scale. 
+And don’t forget, no microservice architecture is complete without 
+Spring Cloud ‒ easing administration and boosting your fault-tolerance.
